@@ -66,3 +66,95 @@
     object-fit: cover;
   }
 }
+
+.navBarWrapper {
+  position: fixed;
+  left: 50%;
+  top: 4px;
+  transform: translate(-50%, 0);
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4px;
+
+  width: 100%;
+  max-width: 1280px;
+
+  padding-inline: 2.5%;
+
+  pointer-events: none;
+
+  font-size: 80%;
+
+  @media screen and (min-width: 768px) {
+    top: 12.5rem;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  grid-column: 1 / span 4;
+  pointer-events: auto;
+
+  @media screen and (min-width: 1280px) {
+    grid-column: 2 / span 3;
+  }
+}
+
+.ul {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+.link {
+  opacity: 0.5;
+  font-family: "BIZ UDPGothic", "Noto Sans JP", sans-serif;
+  font-weight: 600;
+
+  &:hover {
+    opacity: 0.2;
+  }
+}
+
+.currentPage {
+  opacity: 1;
+}
+
+.logo {
+  width: 32px;
+}
+
+h2.headline {
+  font-size: clamp(1.5rem, 2.8vw, 2.125rem);
+  line-height: 1.4;
+}
+
+.text {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+}
+
+.linkBtn {
+  display: flex;
+  gap: 1em;
+
+  a {
+    display: grid;
+    place-items: center;
+    padding: .5em 2em;
+    background: #159;
+    color: #fff;
+    border-radius: 999px;
+    transition: all .3s ease-out;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
