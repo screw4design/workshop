@@ -20,7 +20,7 @@ export default function RootLayout({
 
 
   return (
-    <html lang="en">
+    <html lang="ja">
       <body
         className={`antialiased`}
       >

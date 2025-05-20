@@ -18,6 +18,14 @@ export default function NavBar() {
     {
       path: "/recruit",
       label: "Recruit"
+    },
+    {
+      path: "/blog",
+      label: "Blog"
+    },
+    {
+      path: "/works",
+      label: "Work"
     }
   ]
 

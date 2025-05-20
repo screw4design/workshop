@@ -5,7 +5,7 @@ export default function LinkBtn() {
 
   return (
     <div className={styles.linkBtn}>
-      <Link href="{path.link}">HOME</Link>
+      <Link href="{link.path}">show more</Link>
     </div>
   )
 }

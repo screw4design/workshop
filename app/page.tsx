@@ -2,8 +2,8 @@
 import { styleText } from "util"
 import styles from "@/app/styles.module.css"
 import ContentBlock from "@/compornents/ContentBlock"
-import Sample from '@/compornents/Sample'
-import LinkBtn from '@/compornents/LinkBtn'
+import LinkBtn from "@/compornents/LinkBtn"
+
 
 
 export default function Home() {
@@ -18,7 +18,6 @@ export default function Home() {
         </h1>
         <p>BSTは数百のWEBサイト・システム構築を成功させたプロフェッショナル集団です。規模の大きさや業種に関わらず、クライアントが直面する課題に対し最適なプランで成功に導きます。</p>
         <p>BSTのサービスをご紹介します。</p>
-        <Sample />
         <LinkBtn />
       </section>
 
