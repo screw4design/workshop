@@ -20,7 +20,7 @@ export default async function Page({ searchParams }) {
 
   const wpTotalPages = data.headers.get('x-wp-totalpages')
 
-  const postPages = []
+  const postPages: number[] = []
   for (let i = 1; i <= Number(wpTotalPages); i++) {
     postPages.push(i)
   }
